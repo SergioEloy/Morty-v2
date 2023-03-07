@@ -1,0 +1,103 @@
+* {
+    box-sizing: inherit;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+}
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: lightgray;
+}
+
+#quad {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+}
+
+.chr {
+    width: 560px;
+    height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(100, 100, 100);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.chrimg {
+    flex: 2 1 0%;
+    width: 100%;
+}
+
+
+.chrimg img {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    object-position: center center;
+    object-fit: cover;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.chrtxt {
+    display: flex;
+    flex-direction: column;
+    flex: 3 1 0%;
+    position: relative;
+    padding: 50px;
+    color: white;
+    overflow: hidden;
+}
+
+.name {
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+.name .location .first {
+    display: flex;
+    flex: 1 1 0%;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.name h2 {
+    font-size: 1.5em;
+    margin: 0px;
+    padding: 0px;
+}
+
+.alive {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    background-color: lightgreen;
+    height: 0.5em;
+    width: 0.5em;
+    border-radius: 50%;
+    margin-right: 0.3em;
+}
+
+.known, .firstseen {
+    color: rgb(160, 160, 160);
+    padding-bottom: 0px ;
+}
+.first{
+    justify-content: flex-end;
+}
+
+.place, .chapter{
+    margin-top: 0px;
+    margin-bottom: 10px ;
+}
+
